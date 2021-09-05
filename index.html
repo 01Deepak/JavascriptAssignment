@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>assignment on javascript</title>
+</head>
+<body  onload="createTable()">
+    
+    <div id="patientform">
+        
+        <form id="form" name="myForm" >
+            <h1 style="text-align: center;">Patient Form</h1><br><br>
+                <label for="name">Patient name</label>
+                <input type="text" class="input" id="name" name="name" placeholder="enter name">
+                
+            
+           
+            
+                <label for="phone">Phone Number**</label>
+                <input type="text" class="input" id="phone" name="phone" placeholder="enter mobile" maxlength="10" pattern="[0-9]">
+
+                <input type="button" class="plusbutton" onclick="AddPhone()" value="+">
+                
+                <br><br>
+
+            <div id="dynamicphone">
+                
+                <!-- <input type="button" class="plusbutton" onclick="addPhone()" value="+">
+                <br><br> -->
+            </div>
+            
+            <label for="email">Email**</label>
+            <input type="email"  class="input" id="email" name="email">
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="select">Select</option>
+                <option value="male">Male</option>
+                <option value="female">female</option>
+            </select>
+            <br><br>
+           
+
+           <div class="input1">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" ></textarea>
+            <br><br>
+           </div>
+           
+           
+            
+            <div class="allergies">
+                <label for="allergies">Allergies*</label>
+               <input type="checkbox" id="allergies_1" name="allergiescheck" value="1" >1
+               <input type="checkbox" id="allergies_2" name="allergiescheck" value="2" >2
+               <input type="checkbox" id="allergies_3" name="allergiescheck" value="3" >3
+               
+               <input type="checkbox" id="allergies_4" name="allergiescheck" value="4" >4
+               <input type="checkbox" id="allergies_5" name="allergiescheck" value="5" >5
+               <input type="checkbox" id="allergies_6" name="allergiescheck" value="6" >6
+               
+               <input type="checkbox" id="allergies_7" name="allergiescheck" value="7" >7
+               <input type="checkbox" id="allergies_8" name="allergiescheck" value="8" >8
+               <input type="checkbox" id="allergies_9" name="allergiescheck" value="9" >9
+           </div>
+           <br><br>
+
+           <div class="input">
+               <input type="button" onclick="Insert()" value="Save in localstorage">
+               <input type="button" onclick="reset()" value="reset">
+               <!-- <input type="button" onclick="resetcheckbox()" value="uncheck"> -->
+           </div>
+           
+        </form>
+    </div>
+
+    <!---------------------------- table design ------------------------------------>
+    <div id="showtabledata">
+        <table>
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Phone</th>
+                    <th> Alternate Phone</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Alergies</th>
+                    <th>Address</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!----------------------------X table design X------------------------------------>
+</body>
+</html>

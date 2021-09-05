@@ -1,0 +1,43 @@
+#patientform{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background: rgb(207, 207, 207);
+    padding: 2rem 10rem;
+}
+#form{
+    
+   border: 2px solid rgb(34, 17, 192);
+   padding: 1rem;
+background: rgb(255, 255, 255);
+width: 100%;
+}
+.input{
+    width: 25%;
+    
+}
+#form label{
+    margin: 4.3rem 2rem;
+}
+#form textarea{
+    width: 75%;
+    height: 150px;
+}
+#showtabledata{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 2rem 5rem;
+    background: rgb(245, 247, 245);
+}
+table,th,td{
+border: 2px solid green;
+padding: 3px;
+border-spacing: 2px;
+border-collapse: collapse;
+}
+/* .input input{
+    width: 80%;
+} */
